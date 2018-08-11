@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Instrument.create([{model:'Yamaha', description:"Rkfjasklfjasklfjaklsfjakljf", condition:"new", finish:"I dunno", title:"whatever", price: 5},
+            {model:'Riporoni', description:"Rkfjasklfjasklfjaklsfjakljf", condition:"old", finish:"I dunno lol", title:"whatever", price: 15}])

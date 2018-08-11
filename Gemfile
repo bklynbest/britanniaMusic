@@ -28,6 +28,7 @@ gem 'simple_form', '~> 3.5'
 gem 'devise', '~> 4.4'
 gem 'gravatar_image_tag', '~> 1.2'
 gem 'carrierwave'
+gem "font-awesome-rails"
 gem 'mini_magick'
 
 group :development, :test do

@@ -6,9 +6,26 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+  <body class="<%= yield (:body_class) %>">
+    <% if flash[:notice] %>
+      <div class="notification is-success global-notification">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+    <div class="notification is-danger global-notification">
+      <p class="alert"><%= alert %></p>
+    </div>
+    <% end %>
 
-<%= yield %>
+<%= render 'shared/navbar' %>
+ <%= yield(:header) %>
+
+  <div class="container">
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>
